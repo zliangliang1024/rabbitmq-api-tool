@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 public class Consumer {
-    private static final String QUEUE_NAME = "testQ";
+    private static final String QUEUE_NAME = "app-cloud";
     private static final String IP_ADDRESS = "127.0.0.1";
     private static final int PORT = 5672;
 
@@ -17,7 +17,7 @@ public class Consumer {
         };
         ConnectionFactory factory = new ConnectionFactory();
         factory.setUsername("zll");
-        factory.setPassword("123456");
+        factory.setPassword("123");
         factory.setVirtualHost("test");
         // 这里的连接方式与生产者的demo略有不同，注意区分
         Connection connection = factory.newConnection(addresses);	// 创建连接
