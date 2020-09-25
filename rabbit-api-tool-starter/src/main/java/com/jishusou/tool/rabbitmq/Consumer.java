@@ -8,7 +8,7 @@ import java.util.concurrent.TimeoutException;
 
 public class Consumer {
     private static final String QUEUE_NAME = "app-cloud";
-    private static final String IP_ADDRESS = "127.0.0.1";
+    private static final String IP_ADDRESS = "192.168.102.23";
     private static final int PORT = 5672;
 
     public static void main(String[] args) throws IOException, TimeoutException, InterruptedException {
